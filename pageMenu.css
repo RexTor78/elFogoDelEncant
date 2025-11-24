@@ -10,6 +10,12 @@
 .bg-color-restaurant {
     background-color: #f5f5dc;
 }
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
 .fondo {
     position: fixed;
     top: 0;
@@ -37,4 +43,11 @@
     gap: 1cm;
     flex-wrap: wrap;
     justify-content: center;
+}
+.card{
+    background-color: #6f6156;
+    color: #fffaf2;
+    font-family: sans-serif;
+    border-radius: 8px;
+    text-align: center;
 }
