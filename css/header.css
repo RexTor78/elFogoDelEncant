@@ -2,9 +2,24 @@
   --bg-color-restaurant: #f0f0c7;
 }
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   border-bottom: 2px solid;
   background-color: var(--bg-color-restaurant);
   position: fixed;
   width: 100%;
   padding: 10px 0;
 }
+.logoMenu,
+.hamburguerMenu{
+  text-align: center;
+}
+.logoMenu {
+  width: 70%;
+}
+.hamburguerMenu {
+  width: 30%;
+}
+
