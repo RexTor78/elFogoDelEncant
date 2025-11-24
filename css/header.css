@@ -46,3 +46,15 @@ header {
 .navbar li:last-child:hover {
   background-color: #e06363;
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header {
+    flex-wrap: nowrap;
+  }
+  img {
+    max-width: 30%;
+  }
+  .hamburguerMenu {
+    display: none;
+  }
+}
