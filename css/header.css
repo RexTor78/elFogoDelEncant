@@ -84,12 +84,33 @@ header {
     width: 75%;
     height: auto;
   }
-
   .navbar ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-size: 1.5rem;
   }
-  
+  .navbar li a {
+    position: relative;
+  }
+  .navbar li:hover {
+    background-color: transparent;
+  }
+  .navbar li:not(.navbar li:last-child) a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.5s;
+  }
+  .navbar li:not(.navbar li:last-child) a:hover:after {
+    width: 100%;
+  }
+  .navbar li:last-child {
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
 }
