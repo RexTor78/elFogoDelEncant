@@ -40,3 +40,9 @@ header {
   background-color: red;
   color: white;
 }
+.navbar li:hover {
+  background-color: rgb(221, 196, 97);
+}
+.navbar li:last-child:hover {
+  background-color: #e06363;
+}
