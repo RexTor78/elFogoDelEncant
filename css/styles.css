@@ -303,3 +303,50 @@ main.eventos {
   margin: 0;
   color: var(--text-muted);
 }
+
+.band-franja {
+  position: relative;
+  background-image: url("../img/salon-exterior.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 360px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.band-franja::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.band-franja__glass {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  max-width: 980px;
+  margin: 0 auto;
+  background: rgba(255, 250, 245, 0.88);
+  display: flex;
+  align-items: center;
+  padding: 3.2rem 3rem;
+}
+
+.band-franja__content {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.band-franja__content h3 {
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.band-franja__content p {
+  margin: 0 0 0.75rem;
+  color: var(--text-muted);
+}
