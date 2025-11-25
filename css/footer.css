@@ -30,3 +30,9 @@ h4 {
 .footerAditional {
   text-align: center;
 }
+.footerAditional p {
+  padding: 20px;
+}
+.footerAditional li {
+  padding: 10px;
+}
