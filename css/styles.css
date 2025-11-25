@@ -86,3 +86,10 @@ header.bgColorRestaurant {
   max-width: 140px;
   height: auto;
 }
+
+.hamburguerMenu {
+  width: 25%;
+  text-align: center;
+  padding: 8px 0;
+}
+
