@@ -286,3 +286,20 @@ main.eventos {
   font-size: 0.98rem;
   color: rgba(255, 255, 255, 0.88);
 }
+
+.intro-section {
+  max-width: 880px;
+  margin: 3.5rem auto 3rem;
+  padding: 0 6vw;
+  text-align: center;
+}
+
+.intro-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.intro-section p {
+  margin: 0;
+  color: var(--text-muted);
+}
