@@ -93,3 +93,17 @@ header.bgColorRestaurant {
   padding: 8px 0;
 }
 
+.menuToggleButton {
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/menuOpen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
