@@ -45,3 +45,29 @@ h4 {
 .schedule:before {
   content: url("../Images/footerImages/time.svg");
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerInfo,
+  .footerAditional {
+    display: flex;
+  }
+  .address {
+    width: 50%;
+  }
+  .contact {
+    width: 50%;
+  }
+  .schedule {
+    width: 100%;
+  }
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+  .footerAditional {
+    flex-direction: column;
+  }
+  .footerAditional ul {
+    display: flex;
+    justify-content: center;
+  }
+}
