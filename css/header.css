@@ -26,7 +26,7 @@ header {
 .hamburguerMenu button {
   width: 25px;
   height: 25px;
-  background-image: url("../images/navigationImages/menuOpen.png");
+  background-image: url("../Images/navigationImages/menuOpen.png");
   background-size: cover;
 }
 .navbar {
