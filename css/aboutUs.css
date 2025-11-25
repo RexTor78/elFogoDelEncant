@@ -1,0 +1,35 @@
+/*/ CONSTANTES /*/
+:root {
+  --bg-color-restaurant: #f0f0c7;
+}
+* {
+    
+    background-color: var(--bg-color-restaurant);
+}
+
+/*/ PRINCIPALES /*/
+main {
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 90vw;
+}
+
+/*/ GENERALES /*/
+section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 20px;
+}
+
+p {
+    width: 600px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+}
