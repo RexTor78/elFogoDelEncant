@@ -1,0 +1,92 @@
+:root {
+  --bgColorFooter: rgba(133, 84, 24, 0.9);
+  --colorPrimary: rgb(255, 255, 255);
+  --colorTitles: rgb(232, 174, 112);
+
+  --textParagraph-sm: 1.3rem;
+  --textTitles-sm: 1.7rem;
+}
+footer {
+  color: var(--colorPrimary);
+  background-color: var(--bgColorFooter);
+  padding: 30px;
+}
+section {
+  margin-bottom: 20px;
+}
+
+.footerInfo p,
+.contact li,
+.schedule li {
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: var(--textTitles-sm);
+  color: var(--colorTitles);
+  margin-bottom: 30px;
+}
+.footerInfo,
+.footerAditional {
+  text-align: center;
+}
+.footerAditional p {
+  padding: 20px;
+}
+.footerAditional li {
+  padding: 10px;
+}
+.address:before {
+  content: url("../Images/footerImages/address.svg");
+}
+.contact:before {
+  content: url("../Images/footerImages/phone.svg");
+}
+.schedule:before {
+  content: url("../Images/footerImages/time.svg");
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerInfo,
+  .footerAditional {
+    display: flex;
+  }
+  .address {
+    width: 50%;
+  }
+  .contact {
+    width: 50%;
+  }
+  .schedule {
+    width: 100%;
+  }
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+  .footerAditional {
+    flex-direction: column;
+  }
+  .footerAditional ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .footerInfo,
+  .footerAditional {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footerAditional {
+    padding-top: 30px;
+    border-top: 2px solid rgb(143, 130, 130);
+  }
+  .footerAditional p {
+    padding: 0;
+  }
+  .footerAditional ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
