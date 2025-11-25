@@ -80,9 +80,10 @@ align-items: center;
   header {
     flex-wrap: nowrap;
     padding: 40px;
+    height: 100px;
   }
   .logoMenu img{
-    max-width: 30%;
+    max-width: 20%;
   }
   .logoMenu {
     width: 25%;
