@@ -71,3 +71,22 @@ h4 {
     justify-content: center;
   }
 }
+@media (min-width: 1024px) {
+  .footerInfo,
+  .footerAditional {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footerAditional {
+    padding-top: 30px;
+    border-top: 2px solid rgb(143, 130, 130);
+  }
+  .footerAditional p {
+    padding: 0;
+  }
+  .footerAditional ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
