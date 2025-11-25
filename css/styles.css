@@ -350,3 +350,76 @@ main.eventos {
   margin: 0 0 0.75rem;
   color: var(--text-muted);
 }
+
+.event-row {
+  display: flex;
+  min-height: 380px;
+  width: 100%;
+}
+
+.event-row__image {
+  flex: 0 0 58%;
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-row__content {
+  flex: 0 0 42%;
+  background: var(--bg-light);
+  padding: 3.5rem 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-row--image-right {
+  flex-direction: row-reverse;
+}
+
+.event-row__image--bodas {
+  background-image: url("../img/mesa-noche.jpg");
+}
+
+.event-row__image--comuniones {
+  background-image: url("../img/exterior.jpg");
+}
+
+.event-row__image--cumpleanios {
+  background-image: url("../img/salon-cumpleaños.jpg");
+}
+
+.event-row__image--empresa {
+  background-image: url("../img/piscina.jpg");
+}
+
+.event-row__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.event-row__content h2 {
+  font-size: 1.9rem;
+  margin: 0 0 0.8rem;
+}
+
+.event-row__content p {
+  margin: 0 0 0.7rem;
+  color: var(--text-muted);
+  max-width: 36rem;
+}
+
+.event-row__list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.event-row__list li {
+  margin-bottom: 0.35rem;
+}
