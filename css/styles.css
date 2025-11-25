@@ -219,3 +219,31 @@ header.bgColorRestaurant {
 header.bgColorRestaurant img {
   margin: 0 auto;
 }
+
+main.eventos {
+}
+
+.eventos .btn-primary {
+  display: inline-block;
+  padding: 0.9rem 2.6rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  line-height: 1.6;
+}
+
+.eventos .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.4);
+  background: #f07632;
+}
+
