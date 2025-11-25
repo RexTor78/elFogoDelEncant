@@ -144,3 +144,64 @@ header.bgColorRestaurant {
 .navbar li:last-child:hover {
   background-color: #e06363;
 }
+
+@media (min-width: 992px) {
+  header.bgColorRestaurant {
+    flex-wrap: nowrap;
+    padding: 12px 40px;
+  }
+
+  .logoMenu {
+    width: 25%;
+    text-align: left;
+  }
+
+  .logoImageSize {
+    max-width: 140px;
+  }
+
+  .hamburguerMenu {
+    display: none;
+  }
+
+  .navbar {
+    width: 75%;
+    display: block;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .navbar li {
+    padding: 6px 10px;
+    background-color: transparent;
+  }
+
+  .navbar li:last-child {
+    padding: 8px 18px;
+    border-radius: 20px;
+  }
+
+  .navbar li a {
+    position: relative;
+  }
+
+  .navbar li:not(:last-child) a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.4s;
+  }
+
+  .navbar li:not(:last-child) a:hover::after {
+    width: 100%;
+  }
+}
