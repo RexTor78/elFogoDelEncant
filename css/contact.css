@@ -4,12 +4,16 @@
   --bgColorButton: #2563eb;
 }
 body {
-  background-color: rgb(203, 194, 170);
+  background-color: rgb(236, 229, 209);
+}
+.contactSection {
+  padding: 20px;
 }
 .contactSection h1,
 .contactSection h2,
 .contactContainer > p {
   text-align: center;
+  margin: 20px 0;
 }
 input,
 textarea,
@@ -17,7 +21,10 @@ button,
 iframe {
   width: 100%;
 }
-form,
+input {
+  padding: 10px;
+}
+input form,
 .contactInfo,
 .contactMap {
   padding: 20px;
