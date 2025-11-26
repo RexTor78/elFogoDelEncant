@@ -10,7 +10,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-img {
+.logoMenu img {
   max-width: 20%;
 }
 button {

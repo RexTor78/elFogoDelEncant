@@ -1,5 +1,5 @@
 :root {
-  --bgColorFooter: rgba(133, 84, 24, 0.9);
+  --bgColorFooter: #4e433c;
   --colorPrimary: rgb(255, 255, 255);
   --colorTitles: rgb(232, 174, 112);
 
@@ -11,9 +11,6 @@ footer {
   background-color: var(--bgColorFooter);
   padding: 30px;
 }
-section {
-  margin-bottom: 20px;
-}
 
 .footerInfo p,
 .contact li,
@@ -24,7 +21,6 @@ section {
 h4 {
   font-size: var(--textTitles-sm);
   color: var(--colorTitles);
-  margin-bottom: 30px;
 }
 .footerInfo,
 .footerAditional {
@@ -36,6 +32,7 @@ h4 {
 .footerAditional li {
   padding: 10px;
 }
+
 .address:before {
   content: url("../Images/footerImages/address.svg");
 }
@@ -78,8 +75,10 @@ h4 {
     justify-content: space-around;
     align-items: center;
   }
+  .footerInfo section{
+    width: 33.33%;;
+  }
   .footerAditional {
-    padding-top: 30px;
     border-top: 2px solid rgb(143, 130, 130);
   }
   .footerAditional p {
