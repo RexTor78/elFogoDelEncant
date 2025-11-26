@@ -4,17 +4,24 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Restauran L'Encant</title>
+    <title>Restauran L'Encant || About us</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/aboutUs.css'>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel='stylesheet' href='./css/aboutUs.css'>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="bg-color-restaurant" id="headerMenu">
+<!--      
+     POSIBLE CONFLICTO EN EL MERGE   
+     DESCOMENTAR ESTA LINEA EN CASO DE FALLO DE COMPILACION  
+    <header class="bg-color-restaurant" id="headerMenu"> 
+        -->
+
+    <header class="bg-color-restaurant" id="headerMenu" style="position:sticky">
         <div class="logoMenu">
             <img src="Images/navigationImages/logoMasia.png" class="logoImageSize"
                 alt="Logo Oficial de El Fogó de L'Encant" />
@@ -43,7 +50,7 @@
                     <a href="">Contacto</a>
                 </li>
                 <li>
-                    <a class="reservar" href="">Reservar</a>
+                    <a href="">Reservar</a>
                 </li>
             </ul>
         </nav>
@@ -51,8 +58,9 @@
 
     <!-- MAIN -->
     <main>
-        <h1>Restaurant 'El Fogó L'Encant'</h1>
-        <section>
+        <h1 class="aboutUs-h1">Restaurant 'El Fogó L'Encant'</h1>
+
+        <!-- <section>
             <div id="aboutUs">
                 <h4>
                     sobre nosotros
@@ -71,9 +79,63 @@
                         transmitir cercanía, tradición y una dedicación sincera hacia nuestros clientes.'</i>
                 </p>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer></footer>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footerInfo">
+            <section class="address">
+                <h4>Dirección</h4>
+                <address>
+                    <p>Calle Paseo de Gracia 24</p>
+                    <p>08007, Barcelona, España</p>
+                </address>
+            </section>
+            <section class="contact">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>(+34) 923 198 456</li>
+                    <li>
+                        <a href="mailto:reservas@elfogodelencant.es"> reservas@elfogodelencant.es </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="schedule">
+                <h4>Horario</h4>
+                <ul>
+                    <li>Martes - Domingo: 13:00 – 16:00, 20:00 – 23:30</li>
+                    <li>Lunes: Cerrado</li>
+                </ul>
+            </section>
+        </div>
+        <div class="footerAditional">
+            <p>&copy; 2025 El Fogó de L'Encant. Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="">Carta</a>
+                    </li>
+                    <li>
+                        <a href="">Especialidad</a>
+                    </li>
+                    <li>
+                        <a href="">Eventos</a>
+                    </li>
+                    <li>
+                        <a href="">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 
 </body>
 
