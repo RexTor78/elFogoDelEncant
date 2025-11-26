@@ -75,3 +75,42 @@
     background-position: 0px 1050px;
     background-size: 110%;
 }
+
+.aboutUs-opinions {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.aboutUs-cardOpinion {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+    background-color: rgba(240, 128, 128, 0.4);
+    margin: 10px;
+    border: solid 1px black;
+}
+
+.aboutUs-opinion {
+    width: 250px;
+    padding: 20px;
+}
+
+.aboutUs-opinionData {
+    display: flex;
+    align-items: center;
+}
+
+.aboutUs-opinionImage {
+    width: 70px;
+    max-width: 100%;
+    border-radius: 70px;
+}
+
+.aboutUs-opinionIconGoogle {
+    width: 30px;
+    max-width: 100%;
+    border-radius: 5px;
+    background-color: white;
+}
