@@ -1,5 +1,27 @@
+:root {
+    --bgColorFooter: #1E1916;
+    --colorPrimary: #64574E;
+    --colorTitles: #B49E8E;
+    --backgroundcolor: #F4F0EE;
+    /* 
+    --textParagraph-sm: 1.3rem;
+    --textTitles-sm: 1.7rem; */
+}
+
+#aboutUs {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* capa blanca semitransparente */
+    background-image: url(../Images/masiaImages/IMG_6146.jpg);
+    background-blend-mode: lighten;
+    /* modo de fusión */
+    background-size: contain;
+    background-position: center;
+}
+
+
 .aboutUs-main {
-    background-color: rgba(255, 253, 157, 0.2);
+    /* background-color: rgba(255, 253, 157, 0.2); */
+
     text-align: center;
     border-radius: 5px;
     margin: 10px auto;
@@ -99,7 +121,12 @@
 
 .aboutUs-opinionData {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.aboutUs-opinionData p {
+    font-size: 9pt;
 }
 
 .aboutUs-opinionImage {
@@ -109,8 +136,8 @@
 }
 
 .aboutUs-opinionIconGoogle {
-    width: 30px;
+    width: 40px;
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: white;
 }
