@@ -10,3 +10,15 @@
     margin: 0px;
     padding: 20px;
 }
+
+.aboutUs-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.aboutUs-intro {
+    width: 600px;
+    text-align: center;
+    font-size: 12pt;
+}
