@@ -110,5 +110,40 @@ button {
   form button {
     padding: 20px;
   }
-  
+  .contactFlex {
+    display: flex;
+    column-gap: 50px;
+    min-height: 50vh;
+  }
+  .contactFlex form {
+    width: 50%;
+  }
+
+  .contactMap {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .contactMap iframe {
+    height: 100%;
+  }
+  .contactInfo {
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .contactInfoEmail,
+  .contactInfoPhone,
+  .contactInfoAddress {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+  }
+
+  .contactInfoEmail h3:before,
+  .contactInfoAddress h3:before,
+  .contactInfoPhone h3:before {
+    left: 50px;
+  }
 }
