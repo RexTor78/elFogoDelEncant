@@ -1,5 +1,3 @@
-
-
 @media (min-width: 768px) and (max-width: 1024px) {
     .anchorLinkPseudoStyle {
         position: relative;
@@ -48,17 +46,17 @@
         background-color: red;
         transition: all 0.5s;
     }
-
+}
 
 
 .scroll-image-container {
-    height: 100vh;       /* Muestra solo una ventana */
-    overflow-y: scroll;  /* Permite deslizar hacia abajo dentro del contenedor */
+    height: 100vh;       
+    overflow-y: scroll;  
 }
 
 .scroll-image-container img {
-    width: 100%;         /* Ocupa todo el ancho */
-    height: auto;        /* Mantiene proporción */
+    width: 100%;         
+    height: auto;        
     display: block;
 }
 

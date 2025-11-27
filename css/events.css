@@ -63,8 +63,6 @@ img {
   height: auto;
 }
 
-/* ===== HEADER ===== */
-
 header {
   position: sticky;
   top: 0;
@@ -225,8 +223,6 @@ header.bgColorRestaurant img {
   margin: 0 auto;
 }
 
-/* ===== BOTÓN PRINCIPAL ===== */
-
 .eventos .btn-primary {
   display: inline-block;
   padding: 0.9rem 2.6rem;
@@ -250,8 +246,6 @@ header.bgColorRestaurant img {
   box-shadow: 0 16px 35px rgba(0, 0, 0, 0.4);
   background: #f07632;
 }
-
-/* ===== HERO ===== */
 
 .hero-events {
   position: relative;
@@ -293,8 +287,6 @@ header.bgColorRestaurant img {
   color: rgba(255, 255, 255, 0.88);
 }
 
-/* ===== INTRO ===== */
-
 .intro-section {
   max-width: 880px;
   margin: 3.5rem auto 3rem;
@@ -311,8 +303,6 @@ header.bgColorRestaurant img {
   margin: 0;
   color: var(--text-muted);
 }
-
-/* ===== FRANJA VIDRIO ===== */
 
 .band-franja {
   position: relative;
@@ -360,8 +350,6 @@ header.bgColorRestaurant img {
   margin: 0 0 0.75rem;
   color: var(--text-muted);
 }
-
-/* ===== BLOQUES DE EVENTOS ===== */
 
 .event-row {
   display: flex;
@@ -436,8 +424,6 @@ header.bgColorRestaurant img {
   margin-bottom: 0.35rem;
 }
 
-/* ===== EXTRAS ===== */
-
 .extras {
   padding: 3.5rem 6vw 3.8rem;
   text-align: center;
@@ -481,8 +467,6 @@ header.bgColorRestaurant img {
   color: var(--text-muted);
   font-size: 0.92rem;
 }
-
-/* ===== MENÚS EVENTOS ===== */
 
 .menus-eventos {
   padding: 4rem 5vw 4.5rem;
@@ -575,8 +559,6 @@ header.bgColorRestaurant img {
   background-image: url("../img/bodega.jpg");
 }
 
-/* ===== CTA FINAL ===== */
-
 .cta-final {
   padding: 3.8rem 6vw 4.2rem;
   text-align: center;
@@ -594,8 +576,6 @@ header.bgColorRestaurant img {
   margin: 0 auto 1.7rem;
   color: rgba(255, 255, 255, 0.88);
 }
-
-/* ===== FOOTER ===== */
 
 footer {
   color: var(--colorPrimary);
@@ -665,8 +645,6 @@ h4 {
 .footerAditional li {
   padding: 6px 10px;
 }
-
-/* ===== MEDIA QUERIES ===== */
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .footerInfo,

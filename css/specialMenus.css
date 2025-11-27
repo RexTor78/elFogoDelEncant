@@ -53,8 +53,6 @@ img {
   height: auto;
 }
 
-/* ================= HEADER / NAV ================= */
-
 header.bgColorRestaurant {
   display: flex;
   justify-content: space-between;
@@ -215,8 +213,6 @@ header.bgColorRestaurant img {
   margin: 0 auto;
 }
 
-/* ================= HERO MENÚS (PÁGINA MENÚS ESPECIALES) ================= */
-
 .hero-menus {
   position: relative;
   min-height: 60vh;
@@ -279,8 +275,6 @@ header.bgColorRestaurant img {
   background: #f07632;
 }
 
-/* ================= CONTENIDO PÁGINA MENÚS ESPECIALES ================= */
-
 .special-menus-page {
   max-width: 85%;
   margin: 0 auto 4rem;
@@ -305,8 +299,6 @@ header.bgColorRestaurant img {
 .section-header--bodega {
   margin-top: 4rem;
 }
-
-/* ===== Menús especiales ===== */
 
 .menus-especiales {
   margin-bottom: 4rem;
@@ -383,8 +375,6 @@ header.bgColorRestaurant img {
   font-size: 0.98rem;
 }
 
-/* ===== Postres (página menús) ===== */
-
 .postres-section {
   margin-bottom: 4.5rem;
 }
@@ -425,13 +415,10 @@ header.bgColorRestaurant img {
   color: var(--text-muted);
 }
 
-/* ================= BODEGA (PÁGINA MENÚS) ================= */
-
 .bodega-section {
   margin-bottom: 4rem;
 }
 
-/* Tabla manda altura; (JS iguala foto a tabla) */
 .bodega-grid {
   display: grid;
   grid-template-columns: 1.1fr 1.3fr;
@@ -488,13 +475,9 @@ header.bgColorRestaurant img {
   white-space: nowrap;
 }
 
-/* ================= PÁGINA DE EVENTOS ================= */
-
 .eventos {
   background: var(--bg-page);
 }
-
-/* Hero eventos – usa fiesta-luces.jpg de /img */
 
 .hero-events {
   position: relative;
@@ -558,8 +541,6 @@ header.bgColorRestaurant img {
   background: #f07632;
 }
 
-/* Intro eventos */
-
 .intro-section {
   max-width: 860px;
   margin: 3.5rem auto 2.5rem;
@@ -576,8 +557,6 @@ header.bgColorRestaurant img {
   color: var(--text-muted);
   font-size: 1rem;
 }
-
-/* Franja de texto en cristal */
 
 .band-franja {
   padding: 2.8rem 0 3.5rem;
@@ -613,8 +592,6 @@ header.bgColorRestaurant img {
   margin-bottom: 0.55rem;
 }
 
-/* Filas de eventos */
-
 .event-row {
   max-width: 1100px;
   margin: 3rem auto;
@@ -631,8 +608,6 @@ header.bgColorRestaurant img {
   background-position: center;
   box-shadow: var(--shadow-soft);
 }
-
-/* Aquí uso fotos reales de tu carpeta /img */
 
 .event-row__image--bodas {
   background-image: url("../img/mesa-noche.jpg");
@@ -705,8 +680,6 @@ header.bgColorRestaurant img {
   order: 1;
 }
 
-/* Extras eventos */
-
 .extras {
   max-width: 1100px;
   margin: 3.5rem auto 3rem;
@@ -748,8 +721,6 @@ header.bgColorRestaurant img {
   font-size: 0.96rem;
   color: var(--text-muted);
 }
-
-/* Menús eventos */
 
 .menus-eventos {
   max-width: 1100px;
@@ -801,8 +772,6 @@ header.bgColorRestaurant img {
   color: var(--text-muted);
 }
 
-/* CTA final */
-
 .cta-final {
   max-width: 960px;
   margin: 3.5rem auto 4rem;
@@ -820,8 +789,6 @@ header.bgColorRestaurant img {
   font-size: 0.98rem;
   margin-bottom: 1.4rem;
 }
-
-/* ================= FOOTER ================= */
 
 footer {
   color: var(--colorPrimary);
@@ -891,8 +858,6 @@ h4 {
 .footerAditional li {
   padding: 6px 10px;
 }
-
-/* ================= MEDIA QUERIES ================= */
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .footerInfo,
