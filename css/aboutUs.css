@@ -3,25 +3,18 @@
     --colorPrimary: #64574E;
     --colorTitles: #B49E8E;
     --backgroundcolor: #F4F0EE;
-    /* 
-    --textParagraph-sm: 1.3rem;
-    --textTitles-sm: 1.7rem; */
 }
 
 #aboutUs {
     background-color: rgba(255, 255, 255, 0.9);
-    /* capa blanca semitransparente */
     background-image: url(../Images/masiaImages/IMG_6146.jpg);
     background-blend-mode: lighten;
-    /* modo de fusión */
     background-size: contain;
     background-position: center;
 }
 
 
 .aboutUs-main {
-    /* background-color: rgba(255, 253, 157, 0.2); */
-
     text-align: center;
     border-radius: 5px;
     margin: 10px auto;
@@ -43,6 +36,11 @@
     width: 600px;
     text-align: center;
     font-size: 12pt;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .aboutUs-containerPersonal {
@@ -81,6 +79,11 @@
     border-radius: 100px;
     width: 200px;
     max-width: 100%;
+}
+
+h5 {
+    font-size: 15pt;
+    margin: 10px 0px;
 }
 
 .aboutUs-testimonio {
@@ -140,4 +143,24 @@
     max-width: 100%;
     border-radius: 20px;
     background-color: white;
+}
+
+@Media (width < 700px) {
+
+    .aboutUs-cardsPersonal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 500px;
+    }
+}
+
+@Media (width < 450px) {
+
+    .aboutUs-cardsPersonal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 400px;
+    }
 }

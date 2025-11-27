@@ -1,0 +1,752 @@
+:root {
+  --bg-page: #faf5ea;
+  --bg-light: #fffaf2;
+  --bg-dark: #231711;
+
+  --accent: #e46b2c;
+  --accent-soft: #f8d2ae;
+  --bgColorRestaurant: #f0f0c7;
+
+  --bgColorFooter: #4e433c;
+  --colorPrimary: #ffffff;
+  --colorTitles: #e8ae70;
+
+  --text-main: #2b2117;
+  --text-muted: #6f6156;
+
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.2);
+  --radius-lg: 26px;
+  --radius-md: 18px;
+  --radius-pill: 999px;
+
+  --textParagraph-sm: 1.3rem;
+  --textTitles-sm: 1.7rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+button {
+  border: 0;
+}
+textarea {
+  resize: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header.bgColorRestaurant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #766e2b;
+  background-color: var(--bgColorRestaurant);
+  padding: 10px 20px;
+}
+
+.logoMenu {
+  width: 75%;
+  text-align: center;
+  padding: 6px 0;
+}
+
+.logoImageSize {
+  max-width: 140px;
+  height: auto;
+}
+
+.hamburguerMenu {
+  width: 25%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.menuToggleButton {
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/menuOpen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.menuToggleButton.isOpen {
+  background-image: url("../img/menuClose.png");
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.navbar li {
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar li:last-child {
+  background-color: #64574e;
+  color: white;
+}
+
+.navbar li:hover {
+  background-color: rgb(221, 196, 97);
+}
+
+.navbar li:last-child:hover {
+  background-color: #e06363;
+}
+
+@media (min-width: 992px) {
+  header.bgColorRestaurant {
+    flex-wrap: nowrap;
+    padding: 12px 40px;
+  }
+
+  .logoMenu {
+    width: 25%;
+    text-align: left;
+  }
+
+  .logoImageSize {
+    max-width: 140px;
+  }
+
+  .hamburguerMenu {
+    display: none;
+  }
+
+  .navbar {
+    width: 75%;
+    display: block;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .navbar li {
+    padding: 6px 10px;
+    background-color: transparent;
+  }
+
+  .navbar li:last-child {
+    padding: 8px 18px;
+    border-radius: 20px;
+  }
+
+  .navbar li a {
+    position: relative;
+  }
+
+  .navbar li:not(:last-child) a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #64574e;
+    transition: width 0.4s;
+  }
+
+  .navbar li:not(:last-child) a:hover::after {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .logoMenu {
+    width: 70%;
+  }
+  .hamburguerMenu {
+    width: 30%;
+  }
+}
+
+header.bgColorRestaurant img {
+  margin: 0 auto;
+}
+
+.eventos .btn-primary {
+  display: inline-block;
+  padding: 0.9rem 2.6rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  line-height: 1.6;
+}
+
+.eventos .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.4);
+  background: #f07632;
+}
+
+.hero-events {
+  position: relative;
+  min-height: 55vh;
+  padding: 5rem 6vw 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.82)), url("../img/fiesta-luces.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-events__overlay {
+  max-width: 800px;
+}
+
+.hero-events__eyebrow {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  margin-bottom: 0.7rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-events__title {
+  font-size: clamp(2.2rem, 3vw + 1.2rem, 3.1rem);
+  margin: 0 0 0.9rem;
+}
+
+.hero-events__subtitle {
+  max-width: 38rem;
+  margin: 0 auto 1.8rem;
+  font-size: 0.98rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.intro-section {
+  max-width: 880px;
+  margin: 3.5rem auto 3rem;
+  padding: 0 6vw;
+  text-align: center;
+}
+
+.intro-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.intro-section p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.band-franja {
+  position: relative;
+  background-image: url("../img/salon-exterior.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 360px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.band-franja::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.band-franja__glass {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  max-width: 980px;
+  margin: 0 auto;
+  background: rgba(255, 250, 245, 0.88);
+  display: flex;
+  align-items: center;
+  padding: 3.2rem 3rem;
+}
+
+.band-franja__content {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.band-franja__content h3 {
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.band-franja__content p {
+  margin: 0 0 0.75rem;
+  color: var(--text-muted);
+}
+
+.event-row {
+  display: flex;
+  min-height: 380px;
+  width: 100%;
+}
+
+.event-row__image {
+  flex: 0 0 58%;
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-row__content {
+  flex: 0 0 42%;
+  background: var(--bg-light);
+  padding: 3.5rem 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-row--image-right {
+  flex-direction: row-reverse;
+}
+
+.event-row__image--bodas {
+  background-image: url("../img/mesa-noche.jpg");
+}
+
+.event-row__image--comuniones {
+  background-image: url("../img/exterior.jpg");
+}
+
+.event-row__image--cumpleanios {
+  background-image: url("../img/salon-cumpleaños.jpg");
+}
+
+.event-row__image--empresa {
+  background-image: url("../img/piscina.jpg");
+}
+
+.event-row__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.event-row__content h2 {
+  font-size: 1.9rem;
+  margin: 0 0 0.8rem;
+}
+
+.event-row__content p {
+  margin: 0 0 0.7rem;
+  color: var(--text-muted);
+  max-width: 36rem;
+}
+
+.event-row__list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.event-row__list li {
+  margin-bottom: 0.35rem;
+}
+
+.extras {
+  padding: 3.5rem 6vw 3.8rem;
+  text-align: center;
+  background: #f5eee4;
+}
+
+.extras h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.extras__intro {
+  max-width: 750px;
+  margin: 0 auto 2.3rem;
+  color: var(--text-muted);
+}
+
+.extras__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.extra-card {
+  background: #f3e2c9;
+  border-radius: var(--radius-md);
+  padding: 1.6rem 1.4rem;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.extra-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.02rem;
+}
+
+.extra-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.menus-eventos {
+  padding: 4rem 5vw 4.5rem;
+  background: var(--bg-page);
+  text-align: center;
+}
+
+.menus-eventos h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.menus-eventos__intro {
+  max-width: 780px;
+  margin: 0 auto 2.5rem;
+  color: var(--text-muted);
+}
+
+.menus-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 220px));
+  grid-template-areas:
+    "entrantes principal carnes"
+    "postres   principal bebidas";
+  gap: 1.6rem;
+}
+
+.menu-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  color: #fff;
+}
+
+.menu-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.78));
+}
+
+.menu-card__inner {
+  position: relative;
+  height: 100%;
+  padding: 1.6rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.menu-card__inner h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.menu-card__inner p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.menu-card--entrantes {
+  grid-area: entrantes;
+  background-image: url("../img/menu-entrantes.jpg");
+}
+
+.menu-card--arroces {
+  grid-area: principal;
+  background-image: url("../img/menu-arroz.jpg");
+}
+
+.menu-card--carnes {
+  grid-area: carnes;
+  background-image: url("../img/menu-carne.jpg");
+}
+
+.menu-card--postres {
+  grid-area: postres;
+  background-image: url("../img/menu-postre.jpg");
+}
+
+.menu-card--bodega {
+  grid-area: bebidas;
+  background-image: url("../img/bodega.jpg");
+}
+
+.cta-final {
+  padding: 3.8rem 6vw 4.2rem;
+  text-align: center;
+  background: var(--bg-dark);
+  color: #fff;
+}
+
+.cta-final h2 {
+  font-size: 2rem;
+  margin: 0 0 0.7rem;
+}
+
+.cta-final p {
+  max-width: 720px;
+  margin: 0 auto 1.7rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+footer {
+  color: var(--colorPrimary);
+  background-color: var(--bgColorFooter);
+  padding: 24px;
+}
+
+.footerInfo,
+.footerAditional {
+  text-align: center;
+}
+
+.footerInfo {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.footerInfo section {
+  margin-bottom: 16px;
+}
+
+.footerInfo p,
+.contact li,
+.schedule li,
+.footerAditional p,
+.footerAditional li {
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: var(--textTitles-sm);
+  color: var(--colorTitles);
+  margin-bottom: 16px;
+}
+
+.address::before,
+.contact::before,
+.schedule::before {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.address::before {
+  content: url("../img/address.svg");
+}
+
+.contact::before {
+  content: url("../img/phone.svg");
+}
+
+.schedule::before {
+  content: url("../img/time.svg");
+}
+
+.footerAditional p {
+  padding: 10px 0;
+}
+
+.footerAditional ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
+}
+
+.footerAditional li {
+  padding: 6px 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerInfo,
+  .footerAditional {
+    display: flex;
+  }
+
+  .footerInfo {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .address,
+  .contact {
+    width: 45%;
+  }
+
+  .schedule {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .footerAditional {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerInfo,
+  .footerAditional {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footerAditional {
+    padding-top: 18px;
+    border-top: 2px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .footerAditional p {
+    padding: 0;
+  }
+
+  .footerAditional ul {
+    justify-content: space-around;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .event-row,
+  .event-row--image-right {
+    flex-direction: column;
+  }
+
+  .event-row__image {
+    flex: 0 0 auto;
+    min-height: 280px;
+  }
+
+  .event-row__content {
+    flex: 0 0 auto;
+    padding: 2.6rem 7vw 3rem;
+  }
+
+  .extras__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .menus-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas:
+      "principal principal"
+      "entrantes carnes"
+      "postres   bebidas";
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-events {
+    min-height: 60vh;
+    padding: 4.2rem 7vw 3.5rem;
+  }
+
+  .band-franja {
+    background-attachment: scroll;
+  }
+
+  .band-franja__glass {
+    padding: 2.2rem 1.7rem;
+  }
+
+  .extras__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menus-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "principal"
+      "entrantes"
+      "carnes"
+      "postres"
+      "bebidas";
+  }
+
+  .menu-card {
+    min-height: 210px;
+  }
+}
