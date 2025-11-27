@@ -1,15 +1,20 @@
 const navMenu = document.querySelector("#menu");
-const buttonMenu = document.querySelector("button");
-let active = true;
+const buttonMenu = document.querySelector(".menuToggleButton");
 
-buttonMenu.addEventListener("click", function () {
-  if (active == true) {
-    navMenu.classList.remove("hidden");
-    navMenu.classList.add("show");
-    active = false;
-  } else {
-    navMenu.classList.remove("show");
-    navMenu.classList.add("hidden");
-    active = true;
-  }
-});
+if (navMenu && buttonMenu) {
+  let isOpen = false;
+
+  buttonMenu.addEventListener("click", function () {
+    if (!isOpen) {
+      navMenu.classList.remove("hidden");
+      navMenu.classList.add("show");
+      buttonMenu.classList.add("isOpen");
+      isOpen = true;
+    } else {
+      navMenu.classList.remove("show");
+      navMenu.classList.add("hidden");
+      buttonMenu.classList.remove("isOpen");
+      isOpen = false;
+    }
+  });
+}

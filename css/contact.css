@@ -1,0 +1,149 @@
+:root {
+  --colorPrimary: rgb(255, 255, 255);
+  --bg-color-restaurant: #f0f0c7;
+  --bgColorButton: #2563eb;
+}
+body {
+  background-color: rgb(236, 229, 209);
+}
+.contactSection {
+  padding: 20px;
+}
+.contactSection h1,
+.contactSection h2,
+.contactContainer > p {
+  text-align: center;
+  margin: 20px 0;
+}
+input,
+textarea,
+button,
+iframe {
+  width: 100%;
+}
+input,
+textarea {
+  padding: 10px;
+}
+textarea {
+  height: 150px;
+}
+form,
+.contactInfo,
+.contactMap {
+  padding: 20px;
+  background-color: var(--bg-color-restaurant);
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px rgb(0, 0, 0);
+  margin-bottom: 40px;
+}
+.contactMarginMobile {
+  margin: 20px;
+}
+button {
+  background-color: var(--bgColorButton);
+  border-radius: 20px;
+  padding: 10px;
+  color: var(--bg-color-restaurant);
+}
+.contactInfoEmail p,
+.contactInfoPhone p,
+.contactInfoAddress p {
+  text-align: center;
+}
+.contactSection span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+.contactSection {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.contactInfoEmail,
+.contactInfoPhone,
+.contactInfoAddress {
+  position: relative;
+}
+.contactInfoEmail h3:before {
+  content: "📩";
+  position: absolute;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+}
+.contactInfoPhone h3:before {
+  content: "📞";
+  position: absolute;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+}
+.contactInfoAddress h3:before {
+  content: "📍";
+  position: absolute;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 993px) {
+  .contactSection h1 {
+    font-size: 3rem;
+  }
+  .contactSection h2 {
+    font-size: 2.4rem;
+  }
+  .contactSection h3 {
+    font-size: 1.8rem;
+  }
+  .contactSection p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  input {
+    padding: 15px;
+  }
+  textarea,
+  form button {
+    padding: 20px;
+  }
+  .contactFlex {
+    display: flex;
+    column-gap: 50px;
+    min-height: 50vh;
+  }
+  .contactFlex form {
+    width: 50%;
+  }
+
+  .contactMap {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .contactMap iframe {
+    height: 100%;
+  }
+  .contactInfo {
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .contactInfoEmail,
+  .contactInfoPhone,
+  .contactInfoAddress {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+  }
+
+  .contactInfoEmail h3:before,
+  .contactInfoAddress h3:before,
+  .contactInfoPhone h3:before {
+    left: 50px;
+  }
+}
