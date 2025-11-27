@@ -79,6 +79,7 @@ h4 {
     border-radius: 100px;
     width: 200px;
     max-width: 100%;
+    margin: auto auto;
 }
 
 h5 {
@@ -112,7 +113,7 @@ h5 {
     width: 250px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px lightgray;
-    background-color: rgba(240, 128, 128, 0.4);
+    background-color: #B49E8E;
     margin: 10px;
     border: solid 1px black;
 }
